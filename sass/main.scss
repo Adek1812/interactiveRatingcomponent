@@ -1,0 +1,195 @@
+@import './reset';
+@import './base';
+@import './mixins';
+@import './variables';
+
+.wrapper {
+	// width: 100vh;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.cards {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		.card1 {
+			width: 40%;
+			height: auto;
+			border-radius: 20px;
+			padding: 30px 30px;
+			display: none;
+			background: linear-gradient(
+				rgba(68, 72, 86, 0.735) 10%,
+				rgba(30, 36, 60, 0.735)
+			);
+
+			@include mobile {
+				width: 95%;
+			}
+
+			@include tablet {
+				width: 50%;
+			}
+
+			.star {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: $neutral-dark-blue;
+				width: 50px;
+				height: 50px;
+				margin-bottom: 20px;
+				border-radius: 50px;
+				.star-img {
+					padding: 10px 10px;
+					width: 35px;
+				}
+			}
+
+			.card1-title {
+				font-size: 1.8rem;
+				font-weight: bold;
+				margin-bottom: 10px;
+			}
+
+			.card1-text {
+				font-size: 1.3rem;
+				font-weight: lighter;
+				line-height: 1.5;
+				color: $neutral-light-gray;
+				margin-bottom: 15px;
+			}
+
+			.number-raitngs {
+				display: flex;
+				justify-content: space-between;
+
+				
+
+				
+				.rating {
+					
+					background-color: $neutral-dark-blue;
+					width: 50px;
+					height: 50px;
+					border-radius: 50%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					cursor: pointer;
+					transition: background-color 0.3s;
+
+					
+
+					.raiting-text {
+						font-size: 0.9rem;
+					}
+				}
+
+				.rating:hover {
+					background-color: $neutral-light-gray;
+				}
+
+				.orange {
+					
+					background-color: $primary-orange;
+				}
+			}
+
+			.btn {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				.btnSubmit {
+					margin-top: 30px;
+					background-color: $primary-orange;
+					border: none;
+					font-size: 1.6rem;
+					width: 100%;
+					padding: 10px 0;
+					border-radius: 30px;
+					color: $neutral-white;
+					transition: background-color 0.3s, color 0.3s;
+				}
+
+				.btnSubmit:hover {
+					background-color: $neutral-white;
+					color: $primary-orange;
+				}
+			}
+		}
+		.card2 {
+			width: 40%;
+			height: auto;
+			border-radius: 20px;
+			padding: 30px 30px;
+			display: none;
+			background: linear-gradient(
+				rgba(68, 72, 86, 0.735) 10%,
+				rgba(30, 36, 60, 0.735)
+			);
+
+			@include mobile {
+				width: 95%;
+			}
+
+			@include tablet {
+				width: 50%;
+			}
+
+			.card2-picture {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				img {
+					width: 200px;
+				}
+			}
+
+			.selecter-rating {
+				margin-top: 20px;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+
+				.selected-info {
+					background-color: hsl(213, 17%, 21%);
+					border-radius: 50px;
+					.text-rating {
+						font-size: 0.6rem;
+						font-weight: lighter;
+						padding: 6px 8px;
+						color: $primary-orange;
+					}
+				}
+
+				h2 {
+					margin-top: 20px;
+					font-size: 1.8rem;
+					font-weight: bold;
+				}
+
+				.text {
+					margin-top: 10px;
+					text-align: center;
+					font-size: 1.3rem;
+					line-height: 1.5;
+					font-weight: lighter;
+
+					color: $neutral-light-gray;
+				}
+			}
+		}
+
+		.show {
+			display: block;
+		}
+
+		
+	}
+}
