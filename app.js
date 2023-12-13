@@ -9,17 +9,8 @@ const hideShowCard = () => {
 	card2.classList.toggle('show');
 };
 
-const checkRating = () => {
-	if (allRatings.classList.contains('orange')) {
-		console.log('ok');
-	} else {
-		console.error('wybierz ocene');
-	}
-};
-
 allRatings.forEach((rating) => {
 	rating.addEventListener('click', () => {
-		rating.classList.toggle('orange');
 		finalRaiting.textContent = rating.textContent;
 	});
 });

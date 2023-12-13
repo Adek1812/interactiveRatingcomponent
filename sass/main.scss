@@ -67,14 +67,12 @@
 				display: flex;
 				justify-content: space-between;
 
-				
-
-				
-				.rating {
-					
+				.rating button {
 					background-color: $neutral-dark-blue;
 					width: 50px;
 					height: 50px;
+					border: none;
+					color: white;
 					border-radius: 50%;
 					display: flex;
 					justify-content: center;
@@ -82,19 +80,20 @@
 					cursor: pointer;
 					transition: background-color 0.3s;
 
-					
-
 					.raiting-text {
 						font-size: 0.9rem;
 					}
 				}
 
-				.rating:hover {
+				.rating button:hover {
 					background-color: $neutral-light-gray;
 				}
 
+				.rating button:focus {
+					background-color: $primary-orange;
+				}
+
 				.orange {
-					
 					background-color: $primary-orange;
 				}
 			}
@@ -189,7 +188,5 @@
 		.show {
 			display: block;
 		}
-
-		
 	}
 }

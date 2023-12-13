@@ -488,10 +488,12 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.wrapper .cards .card1 .number-raitngs .rating {
+.wrapper .cards .card1 .number-raitngs .rating button {
   background-color: hsl(213, 19%, 18%);
   width: 50px;
   height: 50px;
+  border: none;
+  color: white;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -499,11 +501,14 @@ body {
   cursor: pointer;
   transition: background-color 0.3s;
 }
-.wrapper .cards .card1 .number-raitngs .rating .raiting-text {
+.wrapper .cards .card1 .number-raitngs .rating button .raiting-text {
   font-size: 0.9rem;
 }
-.wrapper .cards .card1 .number-raitngs .rating:hover {
+.wrapper .cards .card1 .number-raitngs .rating button:hover {
   background-color: hsl(217, 12%, 63%);
+}
+.wrapper .cards .card1 .number-raitngs .rating button:focus {
+  background-color: hsl(25, 97%, 53%);
 }
 .wrapper .cards .card1 .number-raitngs .orange {
   background-color: hsl(25, 97%, 53%);
